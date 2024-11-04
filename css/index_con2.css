@@ -10,16 +10,23 @@
 #con2 .sub_p{margin-top: 2%; font-size: 25px;}
 
 
-#con2 .con2box{ margin-top: 5%;}
+#con2 .con2box{ margin-top: 10%;}
 #con2 .con2box .imgbox{
     
     display: flex ; justify-content: space-between;
 }
-#con2 .con2box .imgbox img{
-    width: 300px; height: 300px; 
-    /* background-color: rgb(35, 119, 91);  */
-    border-radius: 10px;    
-} 
+#con2 .con2box .block{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+#con2 .con2box .block p{
+    margin-top: 15%;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
 #con2 .con2box{ text-align: center;
     display: block ; justify-content: space-around; }
 #con2 .con2box .but_box button{
@@ -32,4 +39,14 @@
     #con2 .con2_subbox1 h1, .con2_subbox2 h1{font-size: 50px;}
 
     #con2 .con2_subbox1{margin-top: 13%;}
-    #con2 .con2_subbox2{margin-top: 10%; text-align: right;}
+    #con2 .con2_subbox2{margin-top: 20%; text-align: right;}
+
+/* 정기예금 */
+.subbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foderbox{
+    margin-top: 12%;
+}

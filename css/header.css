@@ -36,13 +36,12 @@ a {
 
 /* 헤더 호버효과 */
 #header .h_logo:hover{
-    background-color: rgb(234, 234, 234);
+
     transition: all .3s ease-out;
-    border-radius: 5px;
+
 }
 #header .h_nav li:hover{
 
-    background-color: rgb(234, 234, 234);
     transition: all .3s ease-out;
     border-radius: 5px;
 }
@@ -80,7 +79,7 @@ a {
         border-radius: 50%;
         color: #fff;
 }
-.moveTopBtn h1{font-size: 2.3rem; margin-top: 3%;}
+.moveTopBtn h1{font-size: 2.3rem; margin-top: 13%;}
 .button-container {position: relative;z-index: 1;}
 
 .button-container button {

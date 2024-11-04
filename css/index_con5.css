@@ -1,5 +1,5 @@
 /* 해외계좌 송금 */
-#con5{background-color: rgb(94, 209, 255);
+#con5{background-color: #C5E7FF;
     width: 100%;
     height: 100vh;
 
@@ -22,7 +22,7 @@
 }
 .con5_box1 .content img{
     width: 282px;
-    height: 500px;
+    height: 445px;
     background-color: gray;
     border-radius: 12px;
     
