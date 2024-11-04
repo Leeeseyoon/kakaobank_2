@@ -166,7 +166,7 @@ button{
 }
 #con2 .con2box .imgbox img{
     width: 300px; height: 300px; 
-    background-color: rgb(35, 119, 91); 
+    /* background-color: rgb(35, 119, 91);  */
     border-radius: 10px;    
 } 
 #con2 .con2box{ text-align: center;
