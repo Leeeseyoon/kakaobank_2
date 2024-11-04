@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="c">
+    <link rel="stylesheet" href="css/index_con1.css">
+    <link rel="stylesheet" href="css/index_con2.css">
+    <link rel="stylesheet" href="css/index_con3.css">
+    <link rel="stylesheet" href="css/index_con4.css">
+    <link rel="stylesheet" href="css/index_con5.css">
+    <link rel="stylesheet" href="css/index_con6.css">
     <title>Document kakaobank</title>
     
     <!-- 페이드 효과 스크립트 링크 -->
@@ -33,7 +38,7 @@
     }
     [data-aos="fade-con2down"]{
         transform: translateY(10%);
-        transition-duration: 4s;
+        transition-duration: 0.5s;
         
     }
     [data-aos="fade-con2right"]{
@@ -79,8 +84,8 @@
                     <!-- <video src="image/Main_KV_2line_ko.mp4" autoplay muted loop></video> -->
                 <div class="main_txt">
                     <h1>이미 모두의 은행 <br>지금은 카카오뱅크</h1>
-                    <button><img src=""> Google Play</button><!-- 구글플레이 로고 -->
-                    <button><img src=""> App store</button><!-- 앱스토어 로고 -->
+                    <button><a><img src="image/google.svg">Google Play</a> </button><!-- 구글플레이 로고 -->
+                    <button><a><img src="image/apple.svg">App store</a></button><!-- 앱스토어 로고 -->
                 </div>
                 
             </div>
@@ -96,8 +101,8 @@
                     <h1 data-aos="fade-down"  data-aos-delay="300" data-aos-duration="1000">모바일로 더 손쉬운 <br> 계좌 개설,<br>간편한 이체</h1>
                 </div>
                 <div class="phone">
-                    <div class="L_img" data-aos="fade-left"  data-aos-delay="700" ><div class="imgbox"></div><img src="" alt=""></div>
-                    <div class="R_img" data-aos="fade-right"  data-aos-delay="750"><div class="imgbox"></div><img src="" alt=""></div>
+                    <div class="L_img" data-aos="fade-left"  data-aos-delay="700" ><div class=""><img src="image/목업1.svg" alt=""></div></div>
+                    <div class="R_img" data-aos="fade-right"  data-aos-delay="710"><div class="imgbox"></div><img src="" alt=""></div>
                     <div class="txt1"  data-aos="fade-down">
                         <p>인증서, OTP 없이 계좌 개설이 간편합니다. <br>
                             여러 건의 이체도 몇 번의 터치로 <br>
@@ -119,7 +124,7 @@
                         카카오뱅크의 예금, 적금은 숨겨진 우대조건 없이 <br>
                         누구에게나 편리하고 합리적입니다.</p>
                 </div>
-                <div class="con2box" data-aos="fade-con2down" data-aos-delay="700">
+                <div class="con2box" data-aos="fade-con2down" data-aos-delay="1000">
                     <div class="imgbox">
                         <img src="image/folder_blue.svg" alt="">
                         <img src="image/folder_green.svg" alt="">
@@ -163,8 +168,8 @@
                 <div class="title_txt" >
                     <p data-aos="fade-down"  data-aos-delay="200" data-aos-duration="1000">26주 적금 챌린지</p>
                     <h1 data-aos="fade-down"  data-aos-delay="300" data-aos-duration="1000">함께 도전해서<br>재미있는 26주 적금</h1>
-                    <p class="sub_p" data-aos="fade-down"  data-aos-delay="500" data-aos-duration="1000">26주동안 변화하는 재미에 빠져있는 사이 <br>어느덧 만기 달성 경험을 맛보게 됩니다.</p>
-                    <button data-aos="fade-down"  data-aos-delay="500" data-aos-duration="1000">바로가기 ></button>
+                    <p class="sub_p" data-aos="fade-down"  data-aos-delay="400" data-aos-duration="1000">26주동안 변화하는 재미에 빠져있는 사이 <br>어느덧 만기 달성 경험을 맛보게 됩니다.</p>
+                    <button data-aos="fade-down"  data-aos-delay="400" data-aos-duration="1000">바로가기 ></button>
                 </div>
                 <div class="phone">
                     <div class="L_img" data-aos="fade-downimg"  data-aos-duration="1000"><img src="" alt=""></div>
@@ -196,17 +201,28 @@
             <div id="con5"><!-- 해외 계좌 송금 -->
                 <div class="con5_box1">
                     <img class="b_img" src="image/earth-6213.gif" alt="" width="900px" height="900px">
-                    <h1 data-aos="fade-down"  data-aos-delay="200" data-aos-duration="1000">해외계좌송금과 <br>
+                    <h1 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">해외계좌송금과 <br>
                         WU빠른해외송금을 <br>
                         더 쉽고 저렴하게</h1>
-                    <p data-aos="fade-down"  data-aos-delay="400" data-aos-duration="1000">이사 날짜가 주말이나 공휴일이어도 전월세보증금 대출을 신청할 수 있습니다.</p>
-                    <div class="imgbox" data-aos="fade-downimg"  data-aos-delay="400" data-aos-duration="1000"><img src="" alt=""></div>
+                    <p data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">이사 날짜가 주말이나 공휴일이어도 전월세보증금 대출을 신청할 수 있습니다.</p>
+                    <div class="infinite-scroll-container" style="overflow: hidden; white-space: nowrap; width: 100%;">
+                        <div class="content" style="display: inline-block; animation: scroll 20s linear infinite;">
+                            <img src="image1.jpg" alt="" style="display: inline-block; margin: 0 30px;">
+                            <img src="image2.jpg" alt="" style="display: inline-block; margin: 0 30px;">
+                            <img src="image3.jpg" alt="" style="display: inline-block; margin: 0 30px;">
+                            <img src="image3.jpg" alt="" style="display: inline-block; margin: 0 30px;">
+                            <img src="image3.jpg" alt="" style="display: inline-block; margin: 0 30px;">
+                            
+                            <!-- 추가 이미지들... -->
+                        </div>
+                    </div>
+                    
                 </div>
-                
             </div> 
 
             
-            <div id="con6"><!-- 서류제출페이지 인터랙션 -->
+
+            <div id="con6"><!-- 서제출페이지 인터랙션 -->
                 <div class="con6">
                     <div class="txt_box">
                         <h1 data-aos="fade-down"   data-aos-duration="800">복잡한 서류 제출을 간편하게,<br>
@@ -220,7 +236,7 @@
                         <button onclick="showBox(4)">전월세보증금 대출</button>
                     </div><!-- 버튼과 연결되면서 이미지들이 로딩되게 -->
                 </div>
-                <div class="box1" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000" style="display: block;"><img src="image1.jpg" alt="Box 1"></div>
+                <div class="box1" data-aos="fade-down" data-aos-delay="600" style="display: block;"><img src="image1.jpg" alt="Box 1"></div>
                 <div class="box2" style="display: none;"><img src="image2.jpg" alt="Box 2"></div>
                 <div class="box3" style="display: none;"><img src="image3.jpg" alt="Box 3"></div>
                 <div class="box4" style="display: none;"><img src="image4.jpg" alt="Box 4"></div>
@@ -338,8 +354,23 @@
             AOS.init(); // AOS 초기화
             showBox(1);
         };
-        </script>
+    </script>
         
+
+        <script>
+            const container = document.querySelector('.infinite-scroll-container');
+            const content = document.querySelector('.content');
+        
+            function cloneContent() {
+                const clonedContent = content.cloneNode(true);
+                container.appendChild(clonedContent);
+            }
+        
+            // 초기 콘텐츠 복제
+            cloneContent();
+        </script>
+
+
         <!-- AOS 라이브러리 추가 -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>

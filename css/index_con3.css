@@ -1,0 +1,19 @@
+/* 26주 적금 */
+#con3{
+    margin: 0 20% 0% 20%;
+    text-align: left;
+    height: 100vh;
+    
+    margin-top: 15%;
+}
+#con3 .title_txt{float: left;padding-top: 10%;}
+#con3 .sub_p{font-size: 25px; margin-top: 2%;}
+#con3 .L_img{
+    width: 365px;
+    height: 750px;
+    background-color: rgb(202, 202, 202);
+    border-radius: 50px;
+    float: right;
+    margin-top: 10%;
+    }
+#con3 button{ width: 180px; height: 60px; border-radius: 12px;margin-top: 2%;}
