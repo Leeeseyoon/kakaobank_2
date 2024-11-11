@@ -44,16 +44,6 @@
         display: block; /* 활성화된 카드만 표시 */
     }
     
-#con4 button {
-        background-color: #4CAF50; /* 버튼 배경색 */
-        color: white; /* 버튼 글자색 */
-        border: none; /* 테두리 제거 */
-        cursor: pointer; /* 커서 모양 변경 */
-    }
-    
-#con4 button:hover {
-        background-color: #45a049; /* 버튼 호버 시 색상 변경 */
-    }
 
 
 *, *::before, *, *::after{
@@ -259,7 +249,7 @@ swiper-pagination{
 
 /* 버튼설정 */
 .button-container{
-border: 1px solid red;
+
 
 }
 #con4 .button-container {

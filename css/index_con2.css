@@ -29,12 +29,11 @@
 
 #con2 .con2box{ text-align: center;
     display: block ; justify-content: space-around; }
-#con2 .con2box .but_box button{
-    margin-top: 5%; margin-left: 5%;}
+
 
 
     /* 예적금 텍스트설정 */
-    #con2 button{ width: 180px; height: 60px; border-radius: 12px;margin-top: 5%;}
+
     #con2 .con2_subbox1, .con2_subbox2 p{font-size: 25px;}
     #con2 .con2_subbox1 h1, .con2_subbox2 h1{font-size: 50px;}
 

@@ -36,26 +36,36 @@
     font-size: 24px;
 }
 .con6 .but_box{
-    display: block; justify-content: center;}
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
 
 .con6 .but_box button{
     z-index: 10;
     margin-top: 2%;
     width: 200px; height: 68px;
-    background-color: black; color: white;
+
     border-radius: 50px;
     
 }
 #con6 .box1, .box2, .box3, .box4{
+    margin-top: 1%;
     transform: translateY(80%);
     margin-left: 20%;
-    display: none;
     width: 1140px;
     height: 472px; 
     position: relative;
-    padding-top: 2%;
     z-index: 2;
+    transition: transform 0.5s ease;
 }
+
+/* 선택된 박스에 대한 스타일 */
+.selected-box {
+    transform: translateY(0);
+}
+
 #con6 .box1 {
     background-color: rgb(223, 223, 223);
     }
