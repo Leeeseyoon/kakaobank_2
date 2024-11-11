@@ -44,8 +44,28 @@
 .subbox{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .foderbox{
     margin-top: 12%;
+}
+
+#con2 .but_box{
+    display: flex;
+    justify-self: center;
+    margin-top: 5%;
+    gap: 20px;
+
+}
+#con2 .but_box button{
+    font-weight: 300;
+}
+
+#con2 .but_sub_box{
+    margin-top: 5%;
+}
+#con2 .but_sub_box2{
+    margin-top: 5%;
+    float: right;
 }

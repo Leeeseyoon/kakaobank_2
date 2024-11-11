@@ -77,22 +77,40 @@ span {
     gap: 4%;
     margin-top: 3%;
 }
-#landing .main_txt div{
-    width: 250px;
-
-    background-color: #363636;
+#landing .logobox div{
+    background-color: #333;
     border-radius: 50px;
+    text-align: center;
+    width: 300px;
+    height: 84px;
+    color: white;
+    box-shadow: 0 4px 20px -2px rgba(133, 71, 20, 0.5);
     
+    transition: 0.5s;
 }
-/* a태그 디자인 */
 
-
-
-#landing .main_txt a img{
-    margin-right: 10%;
-
+#landing .logobox div:hover{
+    box-shadow: 0 4px 20px -2px rgba(86, 44, 10, 0.5);
+    transform: translateY(-8px);
+    transition: 0.5s;
+    background-color: #eea300;
 }
-.google{
+#landing .logobox div a{
+    color: white;
+}
+#landing .logobox div p{
+    margin-top: 5%;
+}
+#landing .logobox div img{
+    margin-top: 10%;
+}
+
+
+.google a{
+    display: flex;
+    justify-self: center;
+}
+.apple a{
     display: flex;
     justify-self: center;
 }

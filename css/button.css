@@ -26,7 +26,7 @@ button {
   font-family: "Roboto";
   font-weight: 500;
   line-height: var(--font-size);
-  border-radius: 24px;
+  border-radius: 30px;
   display: block;
   outline: none;
   -webkit-appearance: none;
@@ -107,6 +107,12 @@ button.reverse:hover span {
 /* 해외제출서류 */
 button.selected {
   background: #ffcc00;
+  color: #000;
+  box-shadow: 0 4px 20px -2px rgba(21, 25, 36, 0.5);
+}
+button:hover {
+  transition: 0.5s;
+  background: #eea300;
   color: #000;
   box-shadow: 0 4px 20px -2px rgba(21, 25, 36, 0.5);
 }
