@@ -2,7 +2,7 @@
 #con1 .imgbox{
     width: 365px;
     height: 750px;
-    background-color: rgb(202, 202, 202);
+
     border-radius: 50px;
 
 }
@@ -22,6 +22,7 @@
 #con1 .L_img{float: right; margin-right: 15%;margin-top: 10%;}
 #con1 .R_img{ float: left; margin-left: 14%;
     margin-top: 5%;}
+
 #con1 .txt1{
     font-size: 25px;
     line-height: 1.5;
