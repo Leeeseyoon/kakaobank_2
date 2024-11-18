@@ -33,9 +33,16 @@
 .block-container .btn-back-4 {
   background: linear-gradient(135deg, #b721ff 0%, #21d4fd 100%);
 }
-.btn-img img{
+#con2 .imgbox .btn-img img{
     margin-top: 20%;
     z-index: 1;
+}
+#con2 .subbox .btn-img img{
+    margin-top: 8%;
+}
+#con2 .subbox .leftimg{
+    margin-right: 10%;
+
 }
 .block-container .btn-front {
   position: absolute;

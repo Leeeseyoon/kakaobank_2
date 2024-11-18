@@ -186,6 +186,7 @@ section{
     opacity: 0;
     color: rgb(182, 182, 182);
     transition: all 1s linear;
+    font-size: 1rem;
 }
 
 .swiper-slide h1{
@@ -221,8 +222,8 @@ section{
 }
 
 
-swiper-pagination{
-    margin-top: 40%;
+.swiper-pagination{
+    top: 200px;
 }
 .swiper-pagination-bullet{
     width: 14px;
@@ -253,25 +254,33 @@ swiper-pagination{
 
 #con4 .button-container {
     position: absolute; /* 버튼을 절대 위치로 설정 */
-    bottom: 350px; /* 아래에서 20px 위로 이동 */
+    bottom: 300px; /* 아래에서 20px 위로 이동 */
     left: 50%; /* 중앙 정렬을 위해 왼쪽 50% */
     transform: translateX(-50%); /* 중앙 정렬을 위해 수평으로 이동 */
     display: flex; /* 버튼을 가로로 정렬 */
     gap: 50px; /* 버튼 간의 간격 설정 */
-    
 }
 .swiper-button-next{
-    background-color: rgb(115, 115, 115);
+
     width:60px;
     height: 60px;
     border-radius: 50px;
-    left: 150px;
+    left: 160px;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 .swiper-button-prev{
     left: -220px;
     margin-right: 10%;
     border-radius: 50px;
-    background-color: rgb(115, 115, 115);
     width: 60px;
     height: 60px;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
+.prevBtn{
+    border: 1px solid rgb(138, 19, 19);
+}
+
+
+

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="icon" href="/kakobank/apple-icon-180x180.png">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/index_con4.css">
@@ -29,7 +29,7 @@
 
 
 
-    <title>Document kakaobank</title>
+    <title>KAKAOBANK</title>
     
     <!-- 페이드 효과 스크립트 링크 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
@@ -76,22 +76,33 @@
         <div id="header">
             
                 <div class="h_logo">
-                    <h1><a href=""><img src="image/logo.png" alt="" width="141px" height="24px"></a></h1><!-- 카카오 뱅크 로고 -->
+                    <h1><a class="scroll-link" href="#landing" ><img src="image/logo.png" alt="" width="141px" height="24px" ></a></h1><!-- 카카오 뱅크 로고 -->
                 </div>
                 <div class="h_nav">
                     <ul>
-                        <li><a href="#landing">회사소개</a></li>
-                        <li><a href="#con1">모바일계좌</a></li>
-                        <li><a href="#con2">예금/적금</a></li>
-                        <li><a href="#con3">26주 적금</a></li>
-                        <li><a href="#con4">체크카드</a></li>
-                        <li><a href="#con5">해외송금</a></li>
-                        <li><a href="#con6">서류제출</a></li>
-                        <li><a href="#con7">IT금융</a></li>
+                        <li><a href="#landing" class="scroll-link">회사소개</a></li>
+                        <li><a href="#con1" class="scroll-link">모바일계좌</a></li>
+                        <li><a href="#con2" class="scroll-link">예금/적금</a></li>
+                        <li><a href="#con3" class="scroll-link">26주 적금</a></li>
+                        <li><a href="#con4" class="scroll-link">체크카드</a></li>
+                        <li><a href="#con5" class="scroll-link">해외송금</a></li>
+                        <li><a href="#con6" class="scroll-link">서류제출</a></li>
+                        <li><a href="#con7" class="scroll-link">IT금융</a></li>
                     </ul>
                 </div>
             
         </div>
+        <script>
+            // 스크롤 애니메이션 추가
+            document.querySelectorAll('.scroll-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); // 기본 링크 동작 방지
+                    const targetId = this.getAttribute('href'); // 클릭한 링크의 href 속성 가져오기
+                    const targetElement = document.querySelector(targetId); // 해당 요소 선택
+                    targetElement.scrollIntoView({ behavior: 'smooth' }); // 부드럽게 스크롤
+                });
+            });
+        </script>
 
         <div id="content">
             <div id="landing"><!-- 랜딩 페이지 -->
@@ -135,7 +146,7 @@
                             여러 건의 이체도 몇 번의 터치로 <br>
                             손쉽게 송금 할 수 있습니다.
                         </p>
-                        <button>카카오뱅크 입출금통장 ></button>
+                        <a target="_blank" href="https://www.kakaobank.com/products/withdrawal"><button>카카오뱅크&nbsp입출금통장&nbsp ></button></a>
                     </div>
                 </div>
                 
@@ -203,8 +214,8 @@
                         
                     </div>
                     <div class="but_box">
-                        <button>정기예금 ></button>
-                        <button>자유적금 ></button>
+                        <a target="_blank" href="https://www.kakaobank.com/products/deposit"><button>정기예금 ></button></a>
+                        <a target="_blank" href="https://www.kakaobank.com/products/savings"><button>자유적금 ></button></a>
                     </div>
                     
                 </div>
@@ -218,13 +229,13 @@
                                 내가 원하는 만기날짜를 선택하여 가입할 수 있니다.</p>
 
                             <div class="but_sub_box">
-                                <button>바로가기 ></button> 
+                                <a target="_blank" href="https://www.kakaobank.com/products/deposit"><button>바로가기 ></button></a>
                             </div>
                         </div>
                         <div class="foderbox">
                             <div class="block-container">
                                 <div class="btn-back btn-back-3"></div>
-                                <div class="btn-img"><img src=""></img> </div>
+                                <div class="btn-img"><img src="./image/정기예금.svg"></img> </div>
                                 <div class="btn-front front3">
                                     <svg class="frame">
                                         <rect rx="32" stroke="url(#gradient-half)" />
@@ -242,7 +253,7 @@
                         <div class="foderbox">
                             <div class="block-container">
                                 <div class="btn-back btn-back-3"></div>
-                                <div class="btn-img"><img src=""></img> </div>
+                                <div class="btn-img leftimg"><img src="image/자유적금.svg"></img> </div>
                                 <div class="btn-front front3">
                                     <svg class="frame">
                                         <rect rx="32" stroke="url(#gradient-half)" />
@@ -259,7 +270,7 @@
                                 적은 금액을 원하는금액과 기간을 설정하여 이용해보세요.</p>
 
                             <div class="but_sub_box2">
-                                <button>바로가기 ></button> 
+                                <a target="_blank" href="https://www.kakaobank.com/products/savings"><button>바로가기 ></button></a>
                             </div>
                         </div>
                         
@@ -277,10 +288,11 @@
                     <p class="sub_p" data-aos="fade-down"  data-aos-delay="400" data-aos-duration="1000">26주동안 변화하는 재미에 빠져있는 사이 <br>어느덧 만기 달성 경험을 맛보게 됩니다.</p>
                     
                     
-                    <button data-aos="fade-down"  data-aos-delay="400" data-aos-duration="1000">바로가기 ></button>
+                    <button data-aos="fade-down"  data-aos-delay="400" data-aos-duration="1000"> <a target="_blank" href="https://www.kakaobank.com/products/26weeks">바로가기 ></a></button>
                 </div>
                 <div class="phone">
                     <div class="L_img" data-aos="fade-downimg"  data-aos-duration="1000">
+                        <a target="_blank" href="https://www.kakaobank.com/products/26weeks">
                         <h1>지금 도전해보세요!</h1>
                         <div class="emoji">
                             <img class="emoji-img" src="image/26-3.svg" width="103px" height="103px" alt="">
@@ -315,6 +327,7 @@
                             <img src="image/26-2.svg" alt="">
                             <img src="image/26-1.svg" alt="">
                         </div>
+                    </a>
                     </div>
                     <!-- 페이드효과 설정 보류 -->
                     
@@ -327,45 +340,37 @@
                 <div class="title_txt">
                     <h1 data-aos="fade-down"  data-aos-delay="200" data-aos-duration="1000"><span>프렌즈 체크카드</span><br>내가 고르는 선택의 즐거움</h1>
                     <p data-aos="fade-down"  data-aos-delay="300" data-aos-duration="1000">프렌즈 디자인부터 멋스러운 블랙 컬러 카드까지 프렌즈 친구들 함께합니다.</p>
-                    <button data-aos="fade-down"  data-aos-delay="300" data-aos-duration="1000" id="prevBtn">카카오프렌즈 &nbsp 체크카드</button>
+                    <a target="_blank" href="https://www.kakaobank.com/products/checkcard"></a><button data-aos="fade-down"  data-aos-delay="300" data-aos-duration="1000" class="prevBtn">카카오프렌즈 &nbsp 체크카드</button>
                 </div>
 
                 <section>
                     <div class="swiper">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide slide2">
+                        <div class="swiper-slide slide2">
                             
                             <img src="../image/card-1.png" alt="">
                             
-                            <h1>card1</h1>
-                          </div>
+                        </div>
             
-                          <div class="swiper-slide">
+                        <div class="swiper-slide">
                             
                             <img src="../image/card-2.png" alt="">
                             
-                            <h1>card2</h1>
-                          </div>
+                        </div>
             
-                          <div class="swiper-slide">
+                        <div class="swiper-slide">
                             
                             <img src="../image/card-3.png" alt="">
-                            
-                            <h1>card3</h1>
-                          </div>
+                        </div>
             
-                          <div class="swiper-slide">
+                        <div class="swiper-slide">
                             
                             <img src="../image/card-4.png" alt="">
-                            
-                            <h1>card4</h1>
-                          </div>
-                          <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
                             
                             <img src="../image/card-5.png" alt="">
-                            
-                            <h1>card5</h1>
-                          </div>
+                        </div>
                         </div>
                         <div class="swiper-pagination"></div>
                         
@@ -373,14 +378,14 @@
             
                         <!-- 내비게이션 버튼 추가 -->
                         <div class="button-container">
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"><img src="./image/right.svg" alt=""></div>
+                            <div class="swiper-button-prev"><img src="./image/left.svg" alt=""></div>
                         </div>
                     </div>
                     
                     <div class="blob-container">
-                        <div class="blob one"></div>
-                        <div class="blob two"></div>
+                        <div class="blob one"> </div>
+                        <div class="blob two"> </div>
                     </div>
                 </section>
                 <!-- 스와이프 -->
@@ -430,10 +435,10 @@
                         <button onclick="showBox(4)">전월세보증금 &nbsp대출</button>
                     </div>
                 </div>
-                <div class="box1" data-aos="fade-down" data-aos-delay="600" style="display: block; z-index: 2;"><img src="image1.jpg" alt="Box 1"></div>
-                <div class="box2" ><img src="image2.jpg" alt="Box 2"></div>
-                <div class="box3"><img src="image3.jpg" alt="Box 3"></div>
-                <div class="box4"><img src="image4.jpg" alt="Box 4"></div>
+                <a target="_blank" href="https://www.kakaobank.com/products/creditLine"><div class="box1" data-aos="fade-down" data-aos-delay="600" style="display: block; z-index: 2;"></div></a>
+                <a target="_blank" href="https://www.kakaobank.com/products/creditLoan"><div class="box2" ></div></a>
+                <a target="_blank" href="https://www.kakaobank.com/products/sohoLoans"><div class="box3"></div></a>
+                <a target="_blank" href="https://www.kakaobank.com/products/leaseLoan"><div class="box4"></div></a>
                 
             </div>
 
